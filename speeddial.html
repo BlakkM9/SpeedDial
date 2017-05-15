@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+	<head>    
+		<meta charset="utf-8">
+		<title>SpeedDial</title>
+		<link rel="stylesheet" href="speeddial.css" type="text/css" />
+	</head>
+	
+	<body>
+	
+	<div id="page">
+	
+		<!-- Contextmenu -->
+		
+		<nav id="context-menu" class="context-menu">
+			<ul class="context-menu__items">
+				<li class="context-menu__item">
+					<a href="#" class="context-menu__link" data-action="ChangeURL">
+						<i class="fa fa-URL"></i> Change URL
+					</a>
+				</li>
+				<li class="context-menu__item">
+					<a href="#" class="context-menu__link" data-action="ChangeIMG">
+						<i class="fa fa-IMG"></i> Change IMG
+					</a>
+				</li>
+			</ul>
+		</nav>
+			
+		<!-- Rest -->
+	  
+		<div class="tasts" id="all">
+		
+			<div class="line">
+
+				<div class="highlightit p">
+					<a href="#" class="task" data-id="a1" id="a1">
+						<img src="thumbnails/add.png"  id="a1p"/> 
+					</a>
+				</div>
+				
+				<div class="highlightit p">
+					<a href="#" class="task" data-id="a2" id="a2">
+						<img src="thumbnails/add.png" id="a2p"/> 
+					</a>
+				</div>
+					
+				<div class="highlightit p">
+					<a href="#" class="task" data-id="a3" id="a3">
+						<img src="thumbnails/add.png" id="a3p"/> 
+					</a>
+				</div>
+				
+				<div class="highlightit p">
+					<a href="#" class="task" data-id="a4" id="a4">
+						<img src="thumbnails/add.png" id="a4p"/> 
+					</a>
+				</div>
+				
+				<div class="highlightit p">
+					<a href="#" class="task" data-id="a5" id="a5">
+						<img src="thumbnails/add.png" id="a5p"/> 
+					</a>
+				</div>	
+			</div>
+
+			
+			
+			<div class="line">
+
+				<div class="highlightit p">
+					<a href="#" class="task" data-id="b1" id="b1">
+						<img src="thumbnails/add.png" id="b1p"/> 
+					</a>
+				</div>
+				
+				<div class="highlightit p">
+					<a href="#" class="task" data-id="b2" id="b2">
+						<img src="thumbnails/add.png" id="b2p"/> 
+					</a>
+				</div>
+				
+				<div class="highlightit p">
+					<a href="#" class="task" data-id="b3" id="b3">
+						<img src="thumbnails/add.png" id="b3p"/> 
+					</a>
+				</div>
+				
+				<div class="highlightit p">
+					<a href="#" class="task" data-id="b4" id="b4">
+						<img src="thumbnails/add.png" id="b4p"/> 
+					</a>
+				</div>
+				
+				<div class="highlightit p">
+					<a href="#" class="task" data-id="b5" id="b5">
+						<img src="thumbnails/add.png" id="b5p"/> 
+					</a>
+				</div>
+			
+			</div>
+			
+			<div class="line">		
+				<div class="highlightit p">				
+					<a href="#" class="task" data-id="c1" id="c1">
+						<img src="thumbnails/add.png" id="c1p"/> 
+					</a>
+					
+					<div id="fxp">
+						<img src="thumbnails/add.png" id="c1pfx"/> 
+					</div>			
+				</div>
+				
+				
+				
+				<div class="highlightit p">			
+					<a href="#" class="task" data-id="c2" id="c2">
+						<img src="thumbnails/add.png" id="c2p"/> 
+					</a>
+					
+					<div id="fxp">
+						<img src="thumbnails/add.png" id="c2pfx"/> 
+					</div>			
+				</div>
+										
+				<div class="highlightit p">			
+					<a href="#"  class="task" data-id="c3" id="c3">
+						<img src="thumbnails/add.png" id="c3p"/> 
+					</a>
+											
+					<div id="fxp">
+						<img src="thumbnails/add.png" id="c3pfx"/> 
+					</div>			
+				</div>			
+				
+				<div class="highlightit p">
+					<a href="#" class="task" data-id="c4" id="c4">
+						<img src="thumbnails/add.png" id="c4p"/> 
+					</a>
+													
+					<div id="fxp">
+						<img src="thumbnails/add.png" id="c4pfx"/> 
+					</div>
+				</div>
+
+				
+				
+				
+				<div class="highlightit p">
+					<a href="#" class="task" data-id="c5" id="c5">
+						<img src="thumbnails/add.png" id="c5p"/> 
+					</a>
+					
+					<div id="fxp">
+						<img src="thumbnails/add.png" id="c5pfx"/> 
+					</div>
+				</div>		
+			</div>
+			
+
+			
+			<div id="container">
+				<div id="gradient">
+				</div>
+			</div>		
+		</div>
+	</div>
+	
+	<!-- Loading Screen -->
+	
+	<div id="loader" title="2">
+		<svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+			<path fill="#000" d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z">
+				<animateTransform
+					attributeType="xml"
+					attributeName="transform"
+					type="rotate"
+					from="0 25 25"
+					to="360 25 25"
+					dur="0.6s"
+					repeatCount="indefinite"
+				/>
+			</path>
+		</svg>
+	</div>
+	
+	
+	<script src="scripts/speeddial.js"></script>
+	
+	<script src="scripts/contextmenu.js"></script>
+	
+	<script src="scripts/storage.js"></script>
+	
+	</body>
+</html>

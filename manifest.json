@@ -1,0 +1,26 @@
+{
+
+	"manifest_version": 2,
+	"name": "SpeedDial",
+	"version": "0.2",
+
+	"description": "Opens custom page when new tab is created",
+	"homepage_url": "https://github.com/BlakkM9/SpeedDial",
+	"icons":
+	{
+		"48": "icons/speeddial-48.ico",
+		"96": "icons/speeddial-96.ico"
+	},
+  
+	"permissions": ["storage"],
+	
+	"options_ui":
+	{
+		"page": "settings/options.html"
+	},
+  
+	"chrome_url_overrides":
+	{
+		"newtab": "speeddial.html"
+	}
+}

@@ -1,0 +1,167 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
+
+/* Loading Screen */
+
+#page
+{
+    display: none;
+}
+#loader
+{
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	margin: auto;
+	top: 0; left: 0; bottom: 0; right: 0;
+}
+
+svg path,
+svg rect{
+	fill: #ffffff;
+}
+
+/* Contextmenu */
+
+/* tasks */
+
+.tasks {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.task {
+	display: flex;
+	justify-content: space-between;
+	height: auto; 
+	width: auto; 
+	max-width: 280px; 
+	max-height: 200px;
+	margin: auto;
+	cursor: default;
+}
+
+.context-menu
+{
+	color: #595959;
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.5;
+	display: none;
+	position: absolute;
+	z-index: 10;
+	padding: 4px 0;
+	width: 170px;
+	background-color: #484848;
+	border: solid 1px #2e2e38;
+	box-shadow: 1px 1px 2px #000000;
+}
+
+.context-menu--active {
+	display: block;
+}
+
+.context-menu__items {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.context-menu__item {
+	display: block;
+	border-top: 1px solid #e05705;
+}
+
+.context-menu__item:first-child {
+	border-top: none;
+}
+
+.context-menu__link {
+	display: block;
+	padding: 4px 12px;
+	color: #e05705;
+	text-decoration: none;
+}
+
+.context-menu__link:hover {
+	color: #484848;
+	background-color: #e05705;
+}
+
+
+
+
+/* Content */
+
+body
+{
+	background-color: #000000;
+}
+
+.highlightit img
+{
+	-moz-opacity: 0.7;
+	opacity: 0.8;
+}
+
+.highlightit:hover img
+{
+	-moz-opacity: 1;
+	opacity: 1;
+}
+
+.line
+{
+	float: top;
+	width: auto;
+	height: 200px;
+	margin-top: 0px; /* yGap */
+}
+
+.p
+{
+	background-color: black;
+	width: 280px;
+	height: 200px;
+	float: left;
+	float: top;
+	margin-top: 0px;
+	z-index: -1;
+	margin-left: 0px; /* xGap */
+}
+
+#all
+{
+	position: absolute;
+	height: 680px; /* adjust where vertical center is */
+	width: 1400px; /* 5*280 + 6 * horizontal gap */
+	margin: auto; /* center */
+	top: 0; left: 0; bottom: 0; right: 0; /* ? */
+}
+
+#fxp
+{
+	float: top;
+	margin-top: 15px; /* distance between last line and reflection */
+	-moz-transform: scaleY(-1);
+	opacity: 0.4;
+}
+
+#container
+{
+    position:absolute;
+	left: 0px;
+	top: 613px; /* need to be changed with yGap(bug when ctrl+scoll) */
+	height: 220px;
+    width: 1400px; /* 5*280 + 6 * horizontal gap */
+}
+
+#gradient
+{
+    position:absolute;
+    z-index:2;
+    right:0; bottom:0; left:0;
+    height:240px;
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,1) 40%);
+}
